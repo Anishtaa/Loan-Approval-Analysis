@@ -1,0 +1,24 @@
+--Approval Rate (%) = DIVIDE([Total Approved],[Total Loans],0)
+
+--Average Credit History = AVERAGE(credit_risk_dataset[cb_person_cred_hist_length])
+
+--Average income = AVERAGE(credit_risk_dataset[person_income])
+
+--Average interest rate = AVERAGE(credit_risk_dataset[loan_int_rate])
+
+--Loan_Status_Label = SWITCH(
+    'credit_risk_dataset'[loan_status],
+    1, "Approved",
+    0, "Rejected",
+    "Unknown"
+   )
+
+--Rejection rate (%) = DIVIDE([Total Rejected],[Total Loans],0)
+
+--Risk_level = SWITCH(TRUE(), credit_risk_dataset[cb_person_cred_hist_length] < 2 ,"High",credit_risk_dataset[cb_person_cred_hist_length] < 5 , "Medium","Low")
+
+--Total Approved = CALCULATE(COUNTROWS(credit_risk_dataset),credit_risk_dataset[loan_status] = 1)
+
+--Total Loans = COUNTROWS('credit_risk_dataset')
+
+--Total Rejected = CALCULATE(COUNTROWS(credit_risk_dataset),credit_risk_dataset[loan_status]=0)                  format this
