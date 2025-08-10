@@ -50,9 +50,9 @@ Loan-Approval-Analysis/
 ## 🛠 Tools & Techniques
 - Power BI Desktop for dashboard creation  
 - DAX for calculated measures  
-- Power Query for data cleaning and transformations (if required)  
+- Power Query for data cleaning and transformations  
 
 ## 📌 Notes
 - The DAX measures are documented in `src/queries/DAX.txt`.  
 - The full report is available in `reports/Final_Report.pdf`.  
-- Dashboard screenshots are stored in `reports/dashboard_screenshots/`.  
+- Dashboard screenshots are stored in `reports/screenshot/`.  
